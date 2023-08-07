@@ -30,7 +30,7 @@ const onBigButtonClick = () => {
   if (imgScl < MAX_IMAGE_SCALE) {
     let numScl = parseInt(imgScl, 10);
     numScl += SCALE_STEP;
-    imageScaleInputElement.value = `${numScl  }%`;
+    imageScaleInputElement.value = `${numScl}%`;
     imageScaleTransformation(numScl);
   }
 };
