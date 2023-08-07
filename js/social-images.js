@@ -70,7 +70,7 @@ const createUsersPosts = (data) => {
   for (const pic of data) {
     const randomUserPic = document.querySelector('#picture').content.querySelector('.picture');
     const clonUserPic = randomUserPic.cloneNode(true);
-    clonUserPic.querySelector('.picture__img').src= pic.url;
+    clonUserPic.querySelector('.picture__img').src = pic.url;
     document.querySelector('.pictures').append(clonUserPic);
     clonUserPic.querySelector('.picture__comments').textContent = pic.comments.length;
     clonUserPic.querySelector('.picture__likes').textContent = pic.likes;
